@@ -1,0 +1,110 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+    font-family: 'Lora', serif;
+    font-weight: normal;
+}
+body{
+    margin: 0;
+    padding: 0;
+    /* background-color: #f7f3e9; */
+    background-color: #d5ead4;
+    background-size: 300% 300%;
+   
+	height: 100vh;
+    text-align: center;
+}
+h1{
+    font-size: 3rem;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    /* color: #333333; */
+    color: rgb(27, 135, 25);
+    text-shadow: 1px 1px 3px rgb(132, 131, 131);
+    font-family: 'Lobster', cursive;
+}
+  
+
+.grid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    
+}
+.contain{
+    width:430px ;
+    height:563px;
+    border-radius: 10px 10px 10px 10px;
+    background-color: white;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(4,100px);
+    grid-template-rows: minmax(120px,auto) repeat(5,80px);
+    gap:5px;
+    box-shadow: 0px 0px 7px 5px rgba(152, 146, 146, 0.5);
+}
+.grid button{
+    cursor: pointer;
+    font-size: 1.7rem;
+    border:none;
+}
+
+.span{
+    grid-column: span 2;
+}
+.output{
+    grid-column: 1/-1;
+    border-radius: 10px;
+    background-color: rgba(79, 69, 87, 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.pre-op{
+    color:rgba(255,255,255,0.75);
+    font-size: 1.5rem;
+}
+.sec-op{
+    color:white;
+    font-size: 2.5rem;
+}
+.equal{
+    background-color:rgb(103, 180, 159) ;
+}
+.equal:hover{
+    background-color:rgb(80, 138, 123) ;
+    color: whitesmoke;
+}
+.operation{
+    background-color:#85E6C5;
+}
+.operation:hover{
+    background-color: #71c5a9;
+    color: white;
+}
+.btn{
+    background-color:#D5FFE4;
+}
+.btn:hover{
+    background-color:#c0f0d0 ;
+    color: white;
+}
+.ac,.del{
+    color:red;
+    background-color: rgb(240, 235, 235);
+}
+.ac:hover,.del:hover{
+    background-color: rgb(231, 230, 230);
+}
+button{
+    border-radius: 5px;
+}
+p{
+    margin-top: 15px;
+    margin-bottom: 10px;
+}

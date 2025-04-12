@@ -1,2 +1,2 @@
-# CodSoft-3
+# Project
 by using HTML,CSS &amp; Javascript
